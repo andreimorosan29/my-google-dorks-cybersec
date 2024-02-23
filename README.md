@@ -1,76 +1,76 @@
 # my-google-dorks-cybersec
 A list of all the google dorks I use for pentesting recon.
 
-## +++ Publicly Exposed Documents +++
+### +++ Publicly Exposed Documents +++
 
 site:site.com ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
 
-## +++ Directory listing vulnerabilities +++
+### +++ Directory listing vulnerabilities +++
 
 site:site.com intitle:index.of
 
-## +++ Exposed config files +++ 
+### +++ Exposed config files +++ 
 
 site:site.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
 
-## +++ Exposed Database Files +++
+### +++ Exposed Database Files +++
 
 site:site.com ext:sql | ext:dbf | ext:mdb
 
-## +++ Exposed Log Files +++
+### +++ Exposed Log Files +++
 
 site:site.com ext:log
 
-## +++ Backup and old files +++
+### +++ Backup and old files +++
 
 site:site.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
 
-## +++ Login Pages +++
+### +++ Login Pages +++
 
 site:site.com inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
 
-## +++ SQL Errors +++
+### +++ SQL Errors +++
 
 site:site.com intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
 
-## +++ PHP Errors/Warning +++
+### +++ PHP Errors/Warning +++
 
 site:site.com "PHP Parse error" | "PHP Warning" | "PHP Error"
 
-## +++ phpinfo() +++
+### +++ phpinfo() +++
 
 site:site.com ext:php intitle:phpinfo "published by the PHP Group"
 
-## +++ Search pastebin sites +++
+### +++ Search pastebin sites +++
 
 site:pastebin.com | site:paste2.org | site:pastehtml.com | site:slexy.org | site:snipplr.com | site:snipt.net | site:textsnip.com | site:bitpaste.app | site:justpaste.it | site:heypasteit.com | site:hastebin.com | site:dpaste.org | site:dpaste.com | site:codepad.org | site:jsitor.com | site:codepen.io | site:jsfiddle.net | site:dotnetfiddle.net | site:phpfiddle.org | site:ide.geeksforgeeks.org | site:repl.it | site:ideone.com | site:paste.debian.net | site:paste.org | site:paste.org.ru | site:codebeautify.org  | site:codeshare.io | site:trello.com "site.com"
 
-## +++ Search github and gitlab +++
+### +++ Search github and gitlab +++
 
 site:github.com | site:gitlab.com "site.com"
 
 
-## +++ Search stackoverflow.com +++
+### +++ Search stackoverflow.com +++
 
 site:stackoverflow.com "site.com"
 
-## +++ Signup Pages +++
+### +++ Signup Pages +++
 
 site:site.com inurl:signup | inurl:register | intitle:Signup
 
-## +++ Find Subdomains +++
+### +++ Find Subdomains +++
 
 site:*.site.com
 
-## +++ Find Sub-Subdomains +++
+### +++ Find Sub-Subdomains +++
 
 site:*.*.site.com
 
-## +++ Search in Wayback Machine +++
+### +++ Search in Wayback Machine +++
 
 https://web.archive.org/web/*/site.com/*
 
-## Credits
+### Credits
 COURTESY OF pentest-tools.com/information-gathering/google-hacking
 
 +++ Show only IP addresses (opens multiple tabs) +++
