@@ -1,4 +1,5 @@
-# my-google-dorks-cybersec
+# Cybersec Google Dorks
+
 A list of all the google dorks I use for pentesting recon.
 
 ### +++ Publicly Exposed Documents +++
